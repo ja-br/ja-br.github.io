@@ -51,9 +51,9 @@ a{
 /* Navbar Begin */
 .navbar {
   position: sticky;
+  display: flex;
   top: 0;
   z-index: 1;
-  display: flex;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   border-bottom: solid 1px rgba(107, 0, 0, 0.7);
@@ -76,11 +76,6 @@ a{
 
 }
 
-.nav-link:active{
-  background-color: #555;
-  padding: 10%;
-  border-radius: 10%;
-}
 
 .navbar ul li a:hover {
   color: #277a49;
@@ -88,17 +83,25 @@ a{
 
 /* Section Begin */
 section {
+
+  scroll-snap-align: center;
+}
+
+.section-flex{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
   width: 100%;
   height: 100vh;
-  scroll-snap-align: center;
 }
 
 .round{
   border-radius: 50%;
+}
+
+.round-border{
+  border: 4px solid #eee;
 }
 
 .content{
@@ -127,9 +130,10 @@ section {
   color: #ddd;
 }
 
-#welcome-subtext {
+#welcome-header {
   font-size: 2rem;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 
@@ -144,4 +148,17 @@ header {
   background-color: red;
   display: flex;
   flex-direction: row;
+}
+
+/* Footer */
+footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer a{
+  margin: 0 1% 0 1%;
 }
