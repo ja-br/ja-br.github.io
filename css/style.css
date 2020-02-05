@@ -136,7 +136,10 @@ section {
   font-weight: 500;
 }
 
+#start-btn{
+  margin-bottom: 5%;
 
+}
 
 #start-btn:hover {
   color: #277a49;
@@ -162,7 +165,7 @@ footer{
 }
 
 footer a{
-  margin: 0 1% .5% 1%;
+  margin: 0 1% 1% 1%;
 }
 
 footer a:hover{
