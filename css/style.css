@@ -153,12 +153,20 @@ header {
 /* Footer */
 footer{
   position: fixed;
+  padding-top:5%;
   bottom: 0;
   display: flex;
   justify-content: center;
   width: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0));
 }
 
 footer a{
-  margin: 0 1% 0 1%;
+  margin: 0 1% .5% 1%;
+}
+
+footer a:hover{
+  transform: scale(1.2, 1.2);
+  transition-duration: 200ms;
+  
 }
