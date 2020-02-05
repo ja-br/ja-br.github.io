@@ -1,0 +1,147 @@
+/* Colors
+  bg-green #0b1610
+  hover-green #277a49
+  accent-red #6b0000
+  */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #eee;
+
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.display-l{
+  font-size: 5rem;
+}
+
+.display-xxl {
+  font-size: 15rem;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", Arial, Helvetica, sans-serif; 
+  overflow: hidden;
+  background-color: #232b26;
+  height: 100vh;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/* Navbar Begin */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: solid 1px rgba(107, 0, 0, 0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  font-size: 1rem;
+
+}
+
+.nav-link:active{
+  background-color: #555;
+  padding: 10%;
+  border-radius: 10%;
+}
+
+.navbar ul li a:hover {
+  color: #277a49;
+}
+
+/* Section Begin */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.round{
+  border-radius: 50%;
+}
+
+.content{
+  text-align: left;
+  max-width: 50%;
+}
+
+/* About Section */
+#about{
+  background: url(img/0.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Welcome Overlay */
+#welcome-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ddd;
+}
+
+#welcome-subtext {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+#start-btn:hover {
+  color: #277a49;
+  transition-duration: 200ms;
+}
+
+/* Header */
+header {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
