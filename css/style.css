@@ -124,7 +124,7 @@ section {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.2);
   color: #ddd;
-  background: url(../img/cbus-nightscene.png) no-repeat center center/cover;
+  background: url(https://res.cloudinary.com/ja-br/image/upload/v1580950477/cbus-nightscene_a0gxlc.png) no-repeat center center/cover;
 }
 
 #welcome-header {
@@ -192,7 +192,7 @@ footer a:hover{
   }
 
   footer a{
-    transform: scale(.5,.5);
+    transform: scale(.65,.65);
     margin: 0;
   }
 
