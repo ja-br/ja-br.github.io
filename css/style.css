@@ -182,7 +182,15 @@ footer a:hover{
 
 @media screen and (max-width: 800px){
 
+  #start-btn{
+    margin-bottom: 15%;
+  }
+
   .fa-7x{
     transform: scale(.5,.5);
+  }
+
+  footer a{
+    margin: 0;
   }
 }
