@@ -186,11 +186,10 @@ footer a:hover{
     margin-bottom: 15%;
   }
 
-  .fa-7x{
-    transform: scale(.5,.5);
-  }
+
 
   footer a{
+    transform: scale(.5,.5);
     margin: 0;
   }
 }
