@@ -16,9 +16,7 @@
   box-sizing: border-box;
 }
 
-.display-xxl {
-  font-size: 15rem;
-}
+
 
 body {
   position: relative;
@@ -77,6 +75,49 @@ a{
   color: #277a49;
 }
 
+/* Header */
+header {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Welcome Overlay */
+#welcome-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ddd;
+  background: url(https://res.cloudinary.com/ja-br/image/upload/v1580950477/cbus-nightscene_a0gxlc.png) no-repeat center center/cover;
+}
+
+#welcome-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+#start-btn{
+  margin-bottom: 5%;
+
+}
+
+#start-btn:hover {
+  color: #277a49;
+  transition-duration: 200ms;
+}
+
+#welcome-section p{
+  font-size: 15rem;
+
+}
+
+
+
 /* Section Begin */
 section {
 
@@ -112,43 +153,11 @@ section {
 }
 
 /* About Section */
-
-
-/* Welcome Overlay */
-#welcome-section {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #ddd;
-  background: url(https://res.cloudinary.com/ja-br/image/upload/v1580950477/cbus-nightscene_a0gxlc.png) no-repeat center center/cover;
+.tech-icons{
+  width:75%;
+  background-color: rgba(0,0,0,0.1);
 }
 
-#welcome-header {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: 500;
-}
-
-#start-btn{
-  margin-bottom: 5%;
-
-}
-
-#start-btn:hover {
-  color: #277a49;
-  transition-duration: 200ms;
-}
-
-/* Header */
-header {
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-}
 
 /* Footer */
 footer{
@@ -171,6 +180,7 @@ footer a:hover{
   
 }
 
+/* Media Queries */
 @media screen and (max-width: 1300px){
   .section-flex{
     flex-direction: column;
