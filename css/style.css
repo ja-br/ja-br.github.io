@@ -195,6 +195,10 @@ scroll-snap-align: center;
   justify-content: flex-end;
 }
 
+.col-list:last-child{
+  border-bottom: none;
+}
+
 .col-content{
   display: flex;
   flex-direction: column;
@@ -214,7 +218,7 @@ scroll-snap-align: center;
 
 
 .col-list div{
-  border-top: 1px solid rgba(200, 200, 200, 0.4);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.4);
   width: 100%;
   text-align: center;
   height:30%;
@@ -247,12 +251,31 @@ scroll-snap-align: center;
 }
 
 
+
+/* Projects */
+#projects .section-grid{
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+#projects .col-center{
+  margin-top:5%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+article{
+  margin-bottom:10px;
+}
+
+
 /* Contact */
 #contact .section-grid{
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 2fr 2r 2fr 2fr 2fr;
 }
 
 .form-container{
+  padding-top:10%;
   grid-column: 2;
   grid-row: 2;
   display: flex;
@@ -272,6 +295,7 @@ textarea{
   width:50%;
   min-height:50%;
   color: black;
+  resize: none;
 }
 
 input{
