@@ -271,16 +271,17 @@ article{
 
 /* Contact */
 #contact .section-grid{
-  grid-template-columns: 2fr 2r 2fr 2fr 2fr;
+  grid-template-columns: 1fr 3fr ;
 }
+
+
 
 .form-container{
   padding-top:10%;
   grid-column: 2;
   grid-row: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
   
 }
 
