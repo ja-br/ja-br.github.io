@@ -1,182 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>James Brooks Home</title>
-  <script src="https://kit.fontawesome.com/205c6cf0a4.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>MyPlace</title>
 </head>
 
-<body class="">
-  <div class="container">
-    <div id="welcome-section">
-      <p>Hi!</p>
-      <h1 id="welcome-header">I'm A Web Developer</h1>
-      <a href="#about" id="start-btn"><i class="far fa-play-circle fa-7x"></i></a>
-    </div> <!-- welcome-section -->
+<body>
+	<div class="grid-container">
+		<header>
+			<nav>
+				<ul class="navbar">
+					<li><a href="../index.html">Home</a> </li>
+					<li><span>|</span></li>
+					<li><a href="../blogs">Blogs</a></li>
+					<li><span>|</span></li>
+					<li><a href="../authors">Authors</a></li>
+					<li><span>|</span></li>
+					<li><a href="../genres">Genres</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="grid-col-left">
+			<section id="bio">
+				<h1>James</h1>
+				<div class="content">
+					<div class="bio-col-left">
+						<img src="images/0.jpeg" alt="Selfie"></div>
+					<div class="bio-col-right">
+						<p>"full-stack developer"</p>
+						<br>
+						<br>
+						<p>Columbus,</p>
+						<p>OHIO</p>
+						<p>United States</p>
 
-    <nav class="navbar">
-      <ul>
-        <li><a tabindex="0" class="nav-link" href="#about">About</a></li>
-        <li><a tabindex="0" class="nav-link" href="#projects">Projects</a></li>
-        <li><a tabindex="0" class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav> <!-- Navbar End -->
-
-    <section id="about">
-
-      <div class="section-grid">
-
-        <div class="col-left">
-          <div class="col-content">
-            <h2>About Me</h2>
-            <div class="image">
-              <img src="img/0.jpeg" alt="My Face" class="round round-border">
-            </div>
-
-
-            <p>Computer junkie born in Alaska. In 6th grade I was introduced to the world of creating
-              websites and
-              wrote
-              my
-              first "Hello World" in HTML, and spent way too much time scouring the internet looking for and playing
-              browser-based
-              Java games. As a teenager I explored interests in IT, photography, music, theatre, and graphic design,
-              then
-              after
-              concluding an enlistment in the military I pursued my love for both community arts and multimedia
-              technology.
-              Eventually I decided a career in web sounded pretty cool.
-            </p>
-          </div>
-        </div>
-        <div class="col-center">
-        </div>
-        <div class="col-right">
-          <div class="col-list">
-            <h3>Skills</h3>
-            <div>Full Stack</div>
-            <div>Web Development</div>
-            <div>Object Oriented Programming</div>
-            <div>Agile Scrum</div>
-            <div>Test Driven Development</div>
-            <div>MVC Architecture</div>
-            <div>Git</div>
-            <div class="icons-tech">
-              <i class="fab fa-html5 fa-3x"></i>
-              <i class="fab fa-css3-alt fa-3x"></i>
-              <i class="fab fa-js-square fa-3x"></i>
-              <i class="fab fa-java fa-3x"></i>
-              <i class="fab fa-bootstrap fa-3x"></i>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section> <!-- About End -->
-
-    <section id="projects">
-      <div class="section-grid">
-        <h2>Projects</h2>
-
-        <div class="col-left">
-
-        </div>
-
-        <div class="col-center">
-          <div class="col-center">
-            <article id="project1 ">
-              <div class="col-list">
-                <h3>FizzBuzz</h3>
-                <div>Fizz buzz is a group word game for children to teach them about division.
-                  This is a Java app that lists out the correct pattern with "Fizz" replacing every multiple of 3 and
-                  "Buzz" replacing multiples of 5.
-                </div>
-                <small><a href="https://github.com/2020-Spring-Cohort/fizzbuzz-ja-br"><strong>View on
-                      GitHub</strong></a></small>
-
-              </div>
-            </article>
-            <article id="project2 col-list">
-              <div class="col-list">
-
-                <h3>Hospital</h3>
-                <div>This Java app is an test of Object Oriented Programming basics.</div>
-                <small><a href="https://github.com/2020-Spring-Cohort/high-st-hospital-ja-br"><strong>View on
-                      GitHub</strong></a></small>
-              </div>
-            </article>
-            <article id="project3 col-list">
-
-              <div class="col-list">
-                <h3>Fortune Teller</h3>
-                <div>The Fortune Teller app can predict your future after answering just a few simple questions...</div>
-                <small><a href="https://github.com/ja-br/fortune-teller"><strong>View on GitHub</strong></a></small>
-              </div>
-            </article>
+					</div>
+				</div><!-- CONTENT -->
+			</section>
+			<section id="contact">
+				<h2>Contacting James</h2>
+				<div class="content">
+					<a href=""><img src="images/icons/sendMailIcon.gif" alt="Send Message"></a>
+					<a href=""><img src="images/icons/forwardMailIcon.gif" alt="Forward to Friend"></a>
+					<a href=""><img src="images/icons/addFriendIcon.gif" alt="Add to Friends"></a>
+					<a href=""><img src="images/icons/addFavoritesIcon.gif" alt="Add to Favorites"></a>
+					<a href=""><img src="images/icons/messagefriend.gif" alt="Instant Message"></a>
+					<a href=""><img src="images/icons/blockuser.gif" alt="SBlock User"></a>
+					<a href=""><img src="images/icons/icon_add_to_group.gif" alt="Add to Group"></a>
+					<a href=""><img src="images/icons/icon_rank_user4.gif" alt="Rank User"></a>
+				</div><!-- CONTENT -->
 
 
-          </div>
-        </div>
+			</section>
+			<section id="interests">
+				<h2>James's Interests</h2>
+				<div class="content">
+					<div class="content-title">General</div>
+					<div class="content-area">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Accusantium, nesciunt iusto! </div>
+					<div class="content-title">Music</div>
+					<div class="content-area">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Accusantium, nesciunt iusto! Odio at iure saepe delectus quos iste quae eos facere,
+						vitae enim fugiat, ipsum optio obcaecati quaerat eligendi nesciunt dolores sapiente!
+						Aliquid incidunt, velit facere quidem dicta enim eos?</div>
+					<div class="content-title">Movies</div>
+					<div class="content-area">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Accusantium, nesciunt iusto! Odio at iure saepe delectus quos iste quae eos facere,
+						vitae enim fugiat, ipsum optio obcaecati </div>
+					<div class="content-title">Books</div>
+					<div class="content-area">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Accusantium, nesciunt iusto! Odio at iure saepe delectus quos iste quae eos facere,
+						vitae enim fugiat, ipsum optio obcaecati quaerat eligendi nesciunt dolores sapiente!
+						Aliquid incidunt, velit facere quidem dicta enim eos?</div>
+				</div><!-- CONTENT -->
+			</section>
+			<section id="details">
+				<h2>James's Details</h2>
+				<div class="content">
+					<div class="content-title">Status:</div>
+					<div class="content-area">Alive</div>
+					<div class="content-title">Here for:</div>
+					<div class="content-area">Browsing dank memes</div>
+					<div class="content-title">Hometown:</div>
+					<div class="content-area">Party City, USA</div>
+					<div class="content-title">Sign:</div>
+					<div class="content-area">Yield</div>
+					<div class="content-title">Education:</div>
+					<div class="content-area">Some</div>
+					<div class="content-title">Occupation:</div>
+					<div class="content-area">Shiftless Layabout</div>
+				</div><!-- CONTENT -->
+			</section>
+			<section id="schools">
+				<h2>James's Schools</h2>
+				<div class="content">
+					<div class="content-title">
+						<a href="#">We Can Code It</a>
+						<p>Grad Year: 2020</p>
+						<p>Program: Software Development</p>
+					</div>
+					<div class="content-area">2020</div>
+				</div><!-- CONTENT -->
+			</section>
+			<section id="companies">
+				<div class="content">
+
+				</div><!-- CONTENT -->
+				<h2>James's Companies</h2>
+			</section>
+		</div> <!-- GRID-COL-LEFT -->
+
+		<div class="grid-col-right">
+			<section id="network">
+				<p>James is in your extended network</p>
+			</section>
+			<section id="blogs">
+
+				<div class="content">
+					<ul class="blogPost-entries">
+						<li class="blogPost-link">James's Latest Blog Entry [<a href="#">subscribe to this blog</a>] </li>
+						<li>Blogpost 1 (<a href="#" class=" blogPost-link">view more</a>)</li>
+						<li>This is another blog post (<a href="#" class=" blogPost-link">view more</a>)</li>
+						<li>It's 2005 and I blog every day (<a href="#" class=" blogPost-link">view more</a>)</li>
+						<li>[<a href="#" class="blogPost-link">View All Blog Entries</a>]</li>
+					</ul>
+
+				</div><!-- CONTENT -->
+			</section>
+			<section id="blurbs">
+				<h2 class="col-right-sub">James's Blurbs</h2>
+				<div class="content">
+					<h3>About me:</h3>
+					<p>Computer junkie born in Alaska. In 6th grade I was introduced to the world of creating 
+            websites and wrote my first "Hello World" in HTML. I spent way too much time scouring the 
+            internet looking browser-based games. As a teenager I explored interests in IT, photography,
+             music, theatre, and graphic design, then after concluding an enlistment in the military I 
+             pursued my love of both community arts and multimedia technology. Eventually I decided a 
+             career in web sounded pretty cool.</p>
+				
+				</div><!-- CONTENT -->
+			</section><!-- BLURBS -->
+			<section id="friends">
+				<h2 class="col-right-sub">James's Technologies Space</h2>
+				<div class="content skills-list">
+					<div class="skill"><img src="images/logos/logo_html5.png" alt="HTML5 Logo"></div>
+					<div class="skill"><img src="images/logos/logo_css3.png" alt="CSS3 Logo"></div>
+					<div class="skill"><img src="images/logos/logo_javascript.png" alt="Javascript Logo"></div>
+					<div class="skill"><img src="images/logos/logo_java.png" alt="Java Logo"></div>
+					<div class="skill"><img src="images/logos/logo_git.png" alt="Git Logo"></div>
+					<div class="skill"><img src="images/logos/spring-boot_logo.png" alt="Spring Boot Logo"></div>
+					<div class="skill"><img src="images/logos/logo_bootstrap.png" alt="Bootstrap Logo"></div>
+					<div class="skill"><img src="images/friend8.jpg" alt="Friend8"></div>
+				</div><!-- CONTENT -->
+			</section>
+			<section id="comments">
+				<h2>James's Friends Comments</h2>
+				<div id="comments">
+					<div class="comment">
+						<div class="comment-thumb"></div>
+						<div class="comment-text"></div>
+					</div>
+					<div class="comment">
+						<div class="comment-thumb"></div>
+						<div class="comment-text"></div>
+					</div>
+					<div class="comment">
+						<div class="comment-thumb"></div>
+						<div class="comment-text"></div>
+					</div>
+					<div class="comment">
+						<div class="comment-thumb"></div>
+						<div class="comment-text"></div>
+					</div>
+					<div class="comment">
+						<div class="comment-thumb"></div>
+						<div class="comment-text"></div>
+					</div>
+					<div class="comment">
+						<div class="comment-thumb"></div>
+						<div class="comment-text"></div>
+					</div>
+					<div class="comment">
+						<div class="comment-thumb"></div>
+						<div class="comment-text"></div>
+					</div>
+
+				</div><!-- COMMENTS -->
+			</section>
+		</div> <!-- GRID-COL-RIGHT -->
 
 
 
-        <div class="col-right">
-
-        </div>
-      </div>
-    </section> <!-- Projects End -->
-
-    <section id="contact">
-      <div class="section-grid">
-        <div class="form-container">
-          <h2>Get In Touch</h2>
-
-          <form id="contact-form" class="form" action="https://formspree.io/letstalk@jamesbrooks.tech" method="POST">
-            <h3 id="contact-header">Contact Form</h3>
-            <label id="email-label" class="form-label">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address here" required="">
-
-            <label id="subject-label" class="form-label">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Enter message subject here" required="">
-
-            <label id="message-label" class="form-label">Message </label>
-            <textarea id="message" name="message" placeholder="Please enter your message text here"></textarea>
-
-
-            <input type="submit" class="form-button" id="submit-button">
-          </form>
-        </div>
-
-
-      </div>
-    </section><!-- Contact End -->
-
-
-  </div> <!-- Container -->
-
-
-  <footer>
-    <a href="https://linkedin.com/in/ja-br" target="_blank">
-      <i class="fab fa-linkedin fa-7x"></i>
-    </a>
-    <a href="https://github.com/ja-br" target="_blank">
-      <i class="fab fa-github-square fa-7x"></i>
-    </a>
-    <a href="https://twitter.com/jbrookslive" target="_blank">
-      <i class="fab fa-twitter-square fa-7x"></i>
-    </a>
-    <a href="https://codepen.io/ja-br" target="_blank">
-      <i class="fab fa-codepen fa-7x"></i>
-    </a>
-  </footer>
-
-
+	</div>
 </body>
 
 </html>

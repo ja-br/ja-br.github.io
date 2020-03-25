@@ -1,0 +1,93 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 1.6fr 3fr;
+  grid-template-rows: 150px auto;
+  margin: 0 auto;
+}
+
+header{
+  grid-column: 1/3;
+  display: grid;
+  grid-template-rows: 6fr 1fr;
+}
+
+header nav{
+  grid-row:2;
+}
+
+header nav ul{
+  display: flex;
+
+}
+
+/* LEFT COLUMN */
+
+.grid-col-left{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#bio .content{
+  display: grid;
+  padding: 2px;
+  grid-template-columns: 1fr 1fr;
+ }
+ 
+
+#contact .content{
+  display: grid;
+  padding: 2px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4 1fr);
+}
+
+#interests .content{
+  display:grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto;
+}
+
+
+#details .content{
+  display:grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto;
+  margin: 2px;
+}
+
+#schools .content{
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto;
+  margin: 2px;
+}
+
+#blogs-list .content,#authors-list .content,#genres-list .content{
+  display:grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto;
+}
+
+
+/* RIGHT COLUMN */
+
+.grid-col-right{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#friends .content{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#comments{
+  display:flex;
+  flex-direction: column;
+}
+
+.comment{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
