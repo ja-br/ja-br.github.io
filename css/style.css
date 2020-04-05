@@ -170,33 +170,92 @@ section{
   padding: 25px 0;
 }
 
+.tech-list{
 
-#blogs{
 }
 
-#comments{
-  margin: 10px 5px;
-}
-.comment{
-  height: 100px;
+.tech{
+  position: relative;
 }
 
-.comment-thumb{
-  background-color: var(--color-right-col-drk);
-  border: 2px ridge white;
+.tech:hover{
+  transition: transform 55ms ease-out;
+
+  transform: scale(.9);
 }
 
-.comment-text{
-  background-color: var(--color-right-col-lgt);
-  border: 2px ridge white;
-  border-left: none;
-  border-bottom: none;
+.tech img{
+  display: block;
+  margin: 0 auto;
 }
 
-.comment-text:last-of-type{
-  border-bottom: 2px ridge white;
+.logo_html5::before{
+  content: "HTML5";
+
 }
 
+.logo_css3::before{
+  content: "CSS3";
+
+}
+
+.logo_javascript::before{
+  content: "Javascript";
+
+}
+
+.logo_java::before{
+  content: "Java";
+
+}
+
+.logo_git::before{
+  content: "git";
+
+}
+
+.logo_spring::before{
+  content: "Spring Boot";
+
+}
+
+.logo_bootstrap::before{
+  content: "Bootstrap";
+
+}
+
+.logo_adobe::before{
+  content: "Adobe";
+
+}
+
+.tech::before{
+  white-space: nowrap;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-align: center;
+  background-color: rgba(10,20,40,.8);
+  padding: 1em;
+  position: absolute;
+  border-radius: 10px;
+  left: 10%;
+  right: 10%;
+  top: 30%;
+  transform: scale(0);
+  transition: transform 75ms ease-out;
+}
+
+
+.tech:hover::before{
+  transform: scale(1);
+}
+
+
+
+
+
+/*   */
 
 .blog-entries li{
   padding: 5px;
@@ -232,11 +291,41 @@ section{
   font-weight: 700;
 }
 
-.skill img{
+.tech img{
   width:90px;
 }
 
-.skills-list{
+.tech-list{
   display: flex;
   align-items: center;
+}
+
+/* PROJECTS */
+
+#projects-list{
+  margin: 10px 5px;
+
+}
+.project{
+  height: 100px;
+}
+
+.project-thumb{
+  background-color: var(--color-right-col-drk);
+  border: 2px ridge white;
+}
+
+.project-text{
+  background-color: var(--color-right-col-lgt);
+  border: 2px ridge white;
+  border-left: none;
+  border-bottom: none;
+}
+
+.project-text:last-of-type{
+  border-bottom: 2px ridge white;
+}
+
+.project-description{
+  margin: 5px;
 }

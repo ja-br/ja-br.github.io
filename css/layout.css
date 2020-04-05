@@ -82,12 +82,12 @@ header nav ul{
   grid-template-rows: 1fr 1fr;
 }
 
-#comments{
+#projects{
   display:flex;
   flex-direction: column;
 }
 
-.comment{
+.project{
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
