@@ -230,8 +230,8 @@ section{
 
 }
 
-.logo_bootstrap::before{
-  content: "Bootstrap";
+.logo_python::before{
+  content: "Python 3";
 
 }
 
