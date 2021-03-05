@@ -340,3 +340,8 @@ section{
 .project-description{
   margin: 5px;
 }
+
+/* FOOTER */
+footer {
+  height: 100px;
+}
