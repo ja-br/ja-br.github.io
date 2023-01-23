@@ -240,6 +240,11 @@ section{
 
 }
 
+.logo_java::before{
+  content: "Java";
+
+}
+
 .tech::before{
   white-space: nowrap;
   color: white;
