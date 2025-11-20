@@ -30,7 +30,7 @@
 					<div class="bio-col-left">
 						<img src="images/0.jpeg" alt="Selfie"></div>
 					<div class="bio-col-right">
-						<p>"full-stack developer"</p>
+						<p>"Software Engineer with a love for artistic productions"</p>
 						<br>
 						<br>
 						<p>Chicago,</p>
@@ -43,7 +43,7 @@
 			<section id="contact">
 				<h2>Contacting James</h2>
 				<div class="content">
-					<a href="mailto:admin@ja-br.dev"><img src="images/icons/sendMailIcon.gif"
+					<a href="#" id="open-modal"><img src="images/icons/sendMailIcon.gif"
 							alt="Send Message"></a>
 
 				</div><!-- CONTENT -->
@@ -54,8 +54,10 @@
 			<section id="interests">
 				<h2>James's Experience Highlights</h2>
 				<div class="content">
+					<div class="content-title">Game Dev Stuff</div>
+					<div class="content-area">Been building my own games + tools. Busy with a retro style game engine and a multiplayer text RPG. Lots of feature planning, docs, and figuring out how to make chaos behave.</div>
 					<div class="content-title">Software Engineering</div>
-					<div class="content-area">Currently employed as a software engineer for a Fortune 500 company, working on modernizing systems and using cloud technologies.</div>
+					<div class="content-area">Currently employed as a software engineer for a Fortune 500 company, lots of big plans bringing aging systems to the modern world and using cloud technologies.</div>
 					<div class="content-title">Military Service</div>
 					<div class="content-area">Enlisted in the US Air Force, performed flight armorer duties as Security
 						Forces member. Lead installation of satellite internet and local
@@ -111,18 +113,14 @@
 				<h2 class="col-right-sub">James's Blurbs</h2>
 				<div class="content">
 					<h3>A Little About Me:</h3>
-					<p>Multi-facted full stack developer with a love for designing and creating. My childhood was spent reading, 
-						playing video games, taking gadgets apart, and sometimes even putting them back together.
-						Passions and hobbies include theatre, music, photography, and digital technology.
+					<p>Currently diving into game production because I like solving weird problems and helping creative projects stay on the rails.
+						Passions and hobbies include video games, theatre, music, photography, and digital technology.
 						I stave off existential dread by learning new information and making new things.</p>
 					<h3>Technical Inventory:</h3>
-					<p>Java • Spring • Hibernate • JavaScript • Python • Django • MVC •
-						HTML • CSS • Flexbox • Grid • Agile •
-						OOP • AJAX • JSON •
-						Restful APIs • Responsive Design • SQL • Relational Databases • Source
-						Control / Git • Network • Linux • Windows • Desktop Support • Adobe Creative Suite • Remote
+					<p>Java • JavaScript • Python • HTML • CSS • Agile • API • SQL • Relational Databases • Source Control • Git • Linux • MacOS • Windows •  Adobe Creative Suite • Remote
 						Development • UI Development</p>
-
+					<h3>Production:</h3>
+					<p>Planning things • Wrangling ideas into docs • Building tools to make life easier • Playtesting until everything breaks (and then fix it)</p>
 				</div><!-- CONTENT -->
 			</section><!-- BLURBS -->
 			<section id="friends">
@@ -146,21 +144,43 @@
 				<h2>James's Projects</h2>
 				<div id="projects-list">
 
-
 					<div class="project">
-						<div class="project-thumb"></div>
+						<div class="project-thumb"><a href="https://viewer.bitcrushed.games" target="_blank"><img src="images/logos/miskatonic.png" alt="Miskatonic Engine Logo"></a></div>
+						<div class="project-text">
+							<h3 class="project-title">Miskatonic Engine</h3>
+							<div class="project-description">
+								<p>A fully fledged (WIP) 3D game engine built as an Electron app, designed with stylized low-res retro games in mind. </p>
+								<p>Link to demo of the rendering pipeline ported from the engine</p>
+									<a href="https://viewer.bitcrushed.games" target="_blank">Check It Out</a> (Requires hardware acceleration enabled, no touch controls)
+							</div>
+						</div>
+					</div>
+					<div class="project">
+						<div class="project-thumb"><a href="https://www.youtube.com/@NoCulture/featured" target="_blank"><img src="images/logos/noculture.jpg" alt="No Culture Logo"></a></div>
+						<div class="project-text">
+							<h3 class="project-title">No Culture</h3>
+							<div class="project-description">
+								<p>Youtube channel focusing on live video recordings of local and touring musical acts </p>
+								<p>Produced over 600 videos with more than 100 groups</p>
+
+									<a href="https://www.youtube.com/@NoCulture/featured" target="_blank">Check It Out</a>
+							</div>
+						</div>
+					</div>
+					<div class="project">
+						<div class="project-thumb"><a href="https://ja-br.github.io/clicking-calamity/" target="_blank"><img src="images/logos/clickingcalamity.png" alt="Clicking Calamity Logo"></a></div>
 						<div class="project-text">
 							<h3 class="project-title">Clicking Calamity</h3>
 							<div class="project-description">
 								<p>An incremental game inspired by the original <a
 										href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a> game. </p>
 								<p>DOM manipulation with vanilla Javascript and testing done through Jasmine </p>
-								<a class="github-link"
-									href="https://github.com/2020-Spring-Cohort/clicking-calamity-ja-br" target="_blank">See The Code</a> <strong>|</strong>
 									<a href="https://ja-br.github.io/clicking-calamity/" target="_blank">Check It Out</a>
 							</div>
 						</div>
-					</div><!-- Project -->
+					</div>
+
+					<!-- Project -->
 <!-- 					<div class="project">
 						<div class="project-thumb"></div>
 						<div class="project-text">
@@ -185,6 +205,34 @@
 
 	</div><!-- Grid Container -->
 	<footer></footer>
+
+	<!-- Email Modal -->
+	<div id="email-modal" class="modal-overlay">
+		<div class="modal-content">
+			<h2>Send a Message</h2>
+			<form id="contact-form" action="https://formspree.io/f/mblwkbag" method="POST">
+				<div class="form-group">
+					<label for="email">Your Email</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" name="subject" required>
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+				</div>
+				<div class="form-actions">
+					<button type="button" id="cancel-modal">Cancel</button>
+					<button type="submit">Send</button>
+				</div>
+			</form>
+			<div id="form-status"></div>
+		</div>
+	</div>
+
+	<script src="js/modal.js"></script>
 </body>
 
 </html>
