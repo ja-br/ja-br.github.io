@@ -97,6 +97,12 @@ nav a:hover{
   color: black;
 }
 
+nav a:focus{
+  color: black;
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 .nav-link {
   padding: 5px;
 }
@@ -215,18 +221,18 @@ section{
 
 }
 
-.logo_django::before{
-  content: "Django";
+.logo_unity::before{
+  content: "Unity";
 
 }
 
-.logo_git::before{
-  content: "git";
+.logo_godot::before{
+  content: "Godot";
 
 }
 
-.logo_postgres::before{
-  content: "Postgres";
+.logo_aws::before{
+  content: "AWS";
 
 }
 
@@ -264,6 +270,15 @@ section{
 
 
 .tech:hover::before{
+  transform: scale(1);
+}
+
+.tech:focus-within{
+  outline: 2px solid var(--color-text-drk-orn);
+  outline-offset: 2px;
+}
+
+.tech:focus-within::before{
   transform: scale(1);
 }
 
@@ -441,6 +456,32 @@ footer {
 
 .form-actions button:hover {
   opacity: 0.9;
+}
+
+.form-actions button:focus {
+  outline: 2px solid var(--color-text-lgt-blu);
+  outline-offset: 2px;
+}
+
+.form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 0.6s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 #form-status {

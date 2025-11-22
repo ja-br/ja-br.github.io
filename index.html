@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio of James Brooks - Software Engineer, Game Developer, and Creative Technologist">
+	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>MyPlace</title>
@@ -12,11 +14,11 @@
 <body>
 	<div class="grid-container">
 		<header>
-			<div id="my-place"><img class="page-logo" src="images/logos/myplace.png" alt=""></div>
+			<div id="my-place"><img class="page-logo" src="images/logos/myplace.png" alt="MyPlace logo"></div>
 
 			<nav>
 				<ul class="navbar">
-					<li><a class="nav-link" href="../index.html">Home</a> </li>
+					<li><a class="nav-link" href="index.html">Home</a> </li>
 					<li><a class="nav-link" href="https://github.com/ja-br?tab=repositories" target="_blank">GitHub</a>
 					</li>
 					<li><a class="nav-link" href="https://www.linkedin.com/in/ja-br/" target="_blank">LinkedIn</a> </li>
@@ -30,7 +32,7 @@
 					<div class="bio-col-left">
 						<img src="images/0.jpeg" alt="Selfie"></div>
 					<div class="bio-col-right">
-						<p>"Software Engineer with a love for artistic productions"</p>
+						<p>"Computer guy with a love for artistic productions"</p>
 						<br>
 						<br>
 						<p>Chicago,</p>
@@ -83,7 +85,7 @@
 					<div class="content-title">Status:</div>
 					<div class="content-area">Livin' life</div>
 					<div class="content-title">Here for:</div>
-					<div class="content-area">Building apps</div>
+					<div class="content-area">Creating new things</div>
 					<div class="content-title">Hometown:</div>
 					<div class="content-area">Kodiak, Alaska</div>
 					<div class="content-title">Sign:</div>
@@ -102,13 +104,6 @@
 			<section id="network">
 				<p>James is in your extended network</p>
 			</section>
-			<section id="blogs">
-
-				<div class="content">
-
-
-				</div><!-- CONTENT -->
-			</section>
 			<section id="blurbs">
 				<h2 class="col-right-sub">James's Blurbs</h2>
 				<div class="content">
@@ -117,10 +112,9 @@
 						Passions and hobbies include video games, theatre, music, photography, and digital technology.
 						I stave off existential dread by learning new information and making new things.</p>
 					<h3>Technical Inventory:</h3>
-					<p>Java • JavaScript • Python • HTML • CSS • Agile • API • SQL • Relational Databases • Source Control • Git • Linux • MacOS • Windows •  Adobe Creative Suite • Remote
-						Development • UI Development</p>
+					<p>Programming: Java, JavaScript, Python, APIs • Web Dev: HTML, CSS, Databases • Adobe Creative Suite: Photoshop, Lightroom, Premiere Pro Game Dev: Unity, Godot</p>
 					<h3>Production:</h3>
-					<p>Planning things • Wrangling ideas into docs • Building tools to make life easier • Playtesting until everything breaks (and then fix it)</p>
+					<p>Project planning: Jira, Trello, Gantt, Agile/Scrum, Kanban • Documentation: Confluence, Bookstack • Building tools to make life easier • Testing until everything breaks (and then fix it)</p>
 				</div><!-- CONTENT -->
 			</section><!-- BLURBS -->
 			<section id="friends">
@@ -132,11 +126,11 @@
 					</div>
 					<div class="tech logo_python"><img src="images/logos/logo_python.png" alt="Python Logo">
 					</div>
-					<div class="tech logo_django"><img src="images/logos/logo_django.png" alt="Django Logo"></div>
-					<div class="tech logo_git"><img src="images/logos/logo_git.png" alt="Git Logo"></div>
-					<div class="tech logo_postgres"><img src="images/logos/logo_postgres.png" alt="Postgres Logo">
+					<div class="tech logo_unity"><img src="images/logos/logo_unity.png" alt="Unity Logo"></div>
+					<div class="tech logo_godot"><img src="images/logos/logo_godot.png" alt="Godot Logo"></div>
+					<div class="tech logo_aws"><img src="images/logos/logo_aws.png" alt="AWS Logo">
 					</div>
-					<div class="tech logo_java"><img src="images/logos/logo_java.png" alt="Java">
+					<div class="tech logo_adobe"><img src="images/logos/logo_adobe.png" alt="Adobe Logo">
 					</div>
 				</div><!-- CONTENT -->
 			</section>
@@ -145,7 +139,7 @@
 				<div id="projects-list">
 
 					<div class="project">
-						<div class="project-thumb"><a href="https://viewer.bitcrushed.games" target="_blank"><img src="images/logos/miskatonic.png" alt="Miskatonic Engine Logo"></a></div>
+						<div class="project-thumb"><a href="https://viewer.bitcrushed.games" target="_blank"><img src="images/logos/miskatonic.png" alt="Miskatonic Engine Logo" loading="lazy"></a></div>
 						<div class="project-text">
 							<h3 class="project-title">Miskatonic Engine</h3>
 							<div class="project-description">
@@ -156,7 +150,7 @@
 						</div>
 					</div>
 					<div class="project">
-						<div class="project-thumb"><a href="https://www.youtube.com/@NoCulture/featured" target="_blank"><img src="images/logos/noculture.jpg" alt="No Culture Logo"></a></div>
+						<div class="project-thumb"><a href="https://www.youtube.com/@NoCulture/featured" target="_blank"><img src="images/logos/noculture.jpg" alt="No Culture Logo" loading="lazy"></a></div>
 						<div class="project-text">
 							<h3 class="project-title">No Culture</h3>
 							<div class="project-description">
@@ -168,7 +162,7 @@
 						</div>
 					</div>
 					<div class="project">
-						<div class="project-thumb"><a href="https://ja-br.github.io/clicking-calamity/" target="_blank"><img src="images/logos/clickingcalamity.png" alt="Clicking Calamity Logo"></a></div>
+						<div class="project-thumb"><a href="https://ja-br.github.io/clicking-calamity/" target="_blank"><img src="images/logos/clickingcalamity.png" alt="Clicking Calamity Logo" loading="lazy"></a></div>
 						<div class="project-text">
 							<h3 class="project-title">Clicking Calamity</h3>
 							<div class="project-description">
